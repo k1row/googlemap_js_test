@@ -1,0 +1,49 @@
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<div id="map" style="width: 1400px; height: 1280px;"></div>
+<script type="text/javascript">
+	var map = new google.maps.Map(document.getElementById("map"), {
+		zoom: 14,
+		center: new google.maps.LatLng(35.647133, 139.709060),
+		//scrollwheel: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+
+	var pinImage1 = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|7fff00",
+		new google.maps.Size(21, 34),
+		new google.maps.Point(0, 0),
+		new google.maps.Point(10, 34));
+
+	var pinImage2 = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|ffff00",
+		new google.maps.Size(21, 34),
+		new google.maps.Point(0, 0),
+		new google.maps.Point(10, 34));
+
+	var pinImage3 = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|0000ff",
+		new google.maps.Size(21, 34),
+		new google.maps.Point(0, 0),
+		new google.maps.Point(10, 34));
+
+	var pinImage4 = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|ff00ff",
+		new google.maps.Size(21, 34),
+		new google.maps.Point(0, 0),
+		new google.maps.Point(10, 34));
+
+	var pinImage5 = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|ff0000",
+		new google.maps.Size(21, 34),
+		new google.maps.Point(0, 0),
+		new google.maps.Point(10, 34));
+
+
+
+new google.maps.Marker({position: new google.maps.LatLng(35.658544, 139.701052),map: map, icon: pinImage1, title: 'walk'});
+new google.maps.Marker({position: new google.maps.LatLng(35.657941, 139.700433),map: map, icon: pinImage3, title: 'taxi/car'});
+
+new google.maps.Marker({position: new google.maps.LatLng(35.670611, 139.702482),map: map, icon: pinImage1, title: 'walk'});
+new google.maps.Marker({position: new google.maps.LatLng(35.669026, 139.702103),map: map, icon: pinImage3, title: 'taxi/car'});
+
+new google.maps.Marker({position: new google.maps.LatLng(35.647239, 139.709349),map: map, icon: pinImage1, title: 'walk'});
+new google.maps.Marker({position: new google.maps.LatLng(35.647349, 139.709208),map: map, icon: pinImage3, title: 'taxi/car'});
+
+
+</script>
